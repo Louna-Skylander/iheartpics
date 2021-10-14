@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background-image: url(/rodion-kutsaev-049M_crau5k-unsplash.jpg);  
+    background-image: url("bg.jpg");  
     background-size: cover;
     overflow-x: hidden;
     display: grid;
