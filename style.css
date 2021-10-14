@@ -1,0 +1,127 @@
+/* FONT: Bebas Neue, Mulish and Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@300&family=Pacifico&display=swap');
+
+/*-----------[ BODY ]----------- */
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url(/rodion-kutsaev-049M_crau5k-unsplash.jpg);  
+    background-size: cover;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10rem 5rem auto 5rem;
+    grid-template-areas: 
+    "header header header"
+    "form form form"
+    "main main main"
+    "footer footer footer";
+    gap: 0.5rem;
+}
+
+/*-----------[ LOGO ]----------- */
+
+.logo {
+    margin: 0;
+    color: whitesmoke;
+}
+
+/*-----------[ HEADER ]----------- */
+
+header {
+    grid-area: header;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+/*-----------[ SEARCH ]----------- */
+
+form {
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    width: 150px;
+    border-radius: 0.25rem;
+    opacity: 0.8;
+}
+
+input {
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.submit {
+    padding: 0.3rem 1rem;
+    margin-left: 2.5%;
+    border-radius: 999rem;
+    background-color: #fff;
+    opacity: 0.5;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*-----------[ MAIN ]----------- */
+
+main {
+    grid-area: main;
+    margin: 3rem;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0,0,0,1);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/*-----------[ GALLERY ]----------- */
+
+#gallery {
+    width: 300%;
+    padding: 2%;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#gallery .item {
+    height: 100px;
+    margin: 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 2px 2px 10px #000;
+    transition: all 0.4s ease-in-out;
+    border-radius: 1.5rem;
+}
+
+#gallery .item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*-----------[ FOOTER ]----------- */
+
+footer {
+    grid-area: footer;
+    background-color:rgba(0,0,0,0.5);
+    color: whitesmoke;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
